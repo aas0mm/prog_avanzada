@@ -15,7 +15,7 @@ el compiladori¿oficial de **Elm (versión 0.19.1 o superior)**.
 1. Opción A: **Node.js** (opcional, sólo si cuentas con **Node.js**)
 La forma más rápida de instalar Elm es a través del gestor de paquetes de Node: 
     ```bash
-npm install -g elm
+    npm install -g elm
 
 2. Opción B: Instalación directa de **Elm compiler** desde el sitio oficial
    - Ve al sitio web oficial de instalación de Elm: https://guide.elm-lang.org/install/elm 
