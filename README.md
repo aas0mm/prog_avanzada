@@ -28,7 +28,7 @@ La forma más rápida de instalar Elm es a través del gestor de paquetes de Nod
 
 ## Compilación del programa a un archivo HTML
 1. Abre una terminal y navega hasta la carpeta raíz del repositorio
-2. Si es la primera vez que ejecutas el proyecto en esa carptea, inicializa o verifica las
+2. Si es la primera vez que ejecutas el proyecto en esa carpeta, inicializa o verifica las
 dependencias con:
     ```bash
     elm make
