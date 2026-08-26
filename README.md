@@ -22,15 +22,18 @@ La forma más rápida de instalar Elm es a través del gestor de paquetes de Nod
    - Descarga el instalador correspondiente a tu sistema operativo.
    - Ejecuta el instalador descargado y sigue los pasos del asistente.
    - Para verificar la instalación, abre una terminal y ejecuta el siguiente comando:
-        elm --version
+     ```bash
+     elm --version
     Deberías ver en pantalla una respuesta confirmando la versión.
 
 ## Compilación del programa a un archivo HTML
 1. Abre una terminal y navega hasta la carpeta raíz del repositorio
 2. Si es la primera vez que ejecutas el proyecto en esa carptea, inicializa o verifica las
 dependencias con:
+    ```bash
     elm make
-3. Compila el archivo fuente **CasoDeEstudio.elm** para generar un documento HTML:
+4. Compila el archivo fuente **CasoDeEstudio.elm** para generar un documento HTML:
+   ```bash
     elm make src/CasoDeEstudio.elm --output=index.html
 
 ## Ejecución del programa .html
