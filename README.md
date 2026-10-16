@@ -1,42 +1,42 @@
-# Sistema de Asignación de Salas de Reunión (Elm)
+# TrendWear 
 
-**Autores:** Maximiliano Opazo, Martina Opazo, Antonia Orellana, Nicole Retamal y Estefania Troncoso  
-**Fecha:** 27 de agosto de 2026  
+## Nombre del proyecto
+ TrendWear: Sistema de gestión de ventas y productos, diseñado para la administración de inventario de vestuario, control de clientes y procesos de venta.
 
-Este proyecto implementa una aplicación web desarrollada en **Elm** bajo el paradigma de **Programación Reactiva Funcional (FRP)** para la gestión y asignación automática de salas al procesar un flujo de solicitudes.
+## Descripción del problema
+
+Para la administración efectiva de productos, clientes, trabajadores y ventas es necesario que las empresas cuenten con un sistema que refleje sus componentes de manera organizada y transparente. El mercado de prendas de vestir es una de los principales comercios de nuestra sociedad, y permite representar de manera clara la jerarquía de clases dentro de una empresa y la necesidad la tecnología para gestionarla de manera ordenada.
 
 ---
 
-## Prerrequisitos: Descarga e instalación del Compilador de Elm
+## Usuarios del sistema
 
-Para poder compilar y ejecutar este proyecto, es necesario contar con 
-el compiladori¿oficial de **Elm (versión 0.19.1 o superior)**.
+**Cliente/Comprador:** Persona interesada en adquirir o cotizar los productos (poleras, polerones o pantalones)
 
-1. Opción A: **Node.js** (opcional, sólo si cuentas con **Node.js**)
-La forma más rápida de instalar Elm es a través del gestor de paquetes de Node: 
-    ```bash
-    npm install -g elm
+**Empleado:** Atiende a los clientes, procesa las ventas y realiza el registro del movimiento de los productos en el sistema.
 
-2. Opción B: Instalación directa de **Elm compiler** desde el sitio oficial
-   - Ve al sitio web oficial de instalación de Elm: https://guide.elm-lang.org/install/elm 
-   - Descarga el instalador correspondiente a tu sistema operativo.
-   - Ejecuta el instalador descargado y sigue los pasos del asistente.
-   - Para verificar la instalación, abre una terminal y ejecuta el siguiente comando:
-     ```bash
-     elm --version
-    Deberías ver en pantalla una respuesta confirmando la versión.
+## Entidades principales
 
-## Compilación del programa a un archivo HTML
-1. Abre una terminal y navega hasta la carpeta raíz del repositorio
-2. Si es la primera vez que ejecutas el proyecto en esa carpeta, inicializa o verifica las
-dependencias con:
-    ```bash
-    elm make
-4. Compila el archivo fuente **CasoDeEstudio.elm** para generar un documento HTML:
-   ```bash
-    elm make src/CasoDeEstudio.elm --output=index.html
+### Persona
 
-## Ejecución del programa .html
-- Para ejecutar el programa tras la compilación, simplemente puedes buscarlo en la carpeta de la aplicación de archivos y hacer click en él.
+**Atributos:** `nombre (String)`, `rut (String)`, `teléfono (Int)` y `correo (String)`.
+
+**Subclases:** 
+- Cliente: Añade `idCliente (Int)` y la operación de registro en el sistema.
+- Empleado: Añade `sueldo (Int)`, `idEmpleado (Int)`, cargo (String) y la operación de registro.
+
+### Producto (Prendas)
+**Atributos Generales:** `codigo (String)`, `nombre (String)`, `precio (Int)`, `marca (String)`, `talla (String/Int)` y `stock (Int).`
+
+## Operaciones que permitirá el sistema
+
+### Operación 1: Gestión de Personas 
+- Permite registrar y administrar a los clientes que compran en la tienda, así como al personale encargado de la gestión de la empresa utilizando la clase abstracta _Persona_
+
+### Operación 2: Control de Inventario y Catálogo de Prendas
+- Permite visualizar y gestionar el stock de los diferentes tipos de prendas a la venta (poleras, polerones y pantalones), actualizando las cantidades disponibles mediante `actualizar_stock()` y aplicando descuentos a través de la interfaz `Descuentos`.
+
+### Operación 3: Administración de ventas y precios
+- Permite calcular el precio total de cada venta, aplicando descuentos si corresponde, y procesar los pagos, todo esto mediante métodos como `calcular_Subtotal()`, `calcular_Total()`, `aplicarDescuento` y `procesar_Pago()`
 
 ---
