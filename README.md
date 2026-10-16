@@ -5,7 +5,7 @@
 
 ## Descripción del problema
 
-Para la administración efectiva de productos, clientes, trabajadores y ventas es necesario que las empresas cuenten con un sistema que refleje sus componentes de manera organizada y transparente. El mercado de prendas de vestir es una de los principales comercios de nuestra sociedad, y permite representar de manera clara la jerarquía de clases dentro de una empresa y la necesidad la tecnología para gestionarla de manera ordenada.
+Para la administración efectiva de productos, clientes, trabajadores y ventas es necesario que las empresas cuenten con un sistema que refleje sus componentes de manera organizada y transparente. El mercado de prendas de vestir es uno de los principales comercios de nuestra sociedad, y permite representar de manera clara la jerarquía de clases dentro de una empresa y la necesidad la tecnología para gestionarla de manera ordenada.
 
 ---
 
